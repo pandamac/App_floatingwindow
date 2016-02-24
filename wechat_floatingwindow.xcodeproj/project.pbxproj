@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA3FCB741C7D51B600476DC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3FCB731C7D51B600476DC9 /* Foundation.framework */; };
+		BA3FCB761C7D51B600476DC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3FCB751C7D51B600476DC9 /* UIKit.framework */; };
+		BA3FCB801C7D51B600476DC9 /* wechat_floatingwindow.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB7F1C7D51B600476DC9 /* wechat_floatingwindow.h */; };
+		BA3FCB821C7D51B600476DC9 /* wechat_floatingwindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3FCB811C7D51B600476DC9 /* wechat_floatingwindow.m */; };
+		BA3FCB8D1C7D51EA00476DC9 /* HookUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB8B1C7D51EA00476DC9 /* HookUtil.h */; };
+		BA3FCB8E1C7D51EA00476DC9 /* HookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3FCB8C1C7D51EA00476DC9 /* HookUtil.m */; };
+		BA3FCB901C7D53F900476DC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3FCB8F1C7D53F900476DC9 /* CoreLocation.framework */; };
+		BA3FCB921C7D747100476DC9 /* ContactsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB911C7D747100476DC9 /* ContactsViewController.h */; };
+		BA3FCB941C7D74ED00476DC9 /* WCLikeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB931C7D74ED00476DC9 /* WCLikeButton.h */; };
+		BA3FCB961C7D76AA00476DC9 /* ContactsDataLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB951C7D76AA00476DC9 /* ContactsDataLogic.h */; };
+		BA3FCB981C7D76CD00476DC9 /* CBaseContact.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB971C7D76CD00476DC9 /* CBaseContact.h */; };
+		BA3FCB9A1C7D76E900476DC9 /* WCUserComment.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB991C7D76E900476DC9 /* WCUserComment.h */; };
+		BA3FCB9C1C7D789D00476DC9 /* WCDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB9B1C7D789D00476DC9 /* WCDataItem.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA3FCB701C7D51B600476DC9 /* libwechat_floatingwindow.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libwechat_floatingwindow.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3FCB731C7D51B600476DC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA3FCB751C7D51B600476DC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA3FCB7A1C7D51B600476DC9 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		BA3FCB7B1C7D51B600476DC9 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		BA3FCB7D1C7D51B600476DC9 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		BA3FCB7E1C7D51B600476DC9 /* wechat_floatingwindow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wechat_floatingwindow-Prefix.pch"; sourceTree = "<group>"; };
+		BA3FCB7F1C7D51B600476DC9 /* wechat_floatingwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wechat_floatingwindow.h; sourceTree = "<group>"; };
+		BA3FCB811C7D51B600476DC9 /* wechat_floatingwindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wechat_floatingwindow.m; sourceTree = "<group>"; };
+		BA3FCB851C7D51B600476DC9 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+		BA3FCB8B1C7D51EA00476DC9 /* HookUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookUtil.h; sourceTree = "<group>"; };
+		BA3FCB8C1C7D51EA00476DC9 /* HookUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HookUtil.m; sourceTree = "<group>"; };
+		BA3FCB8F1C7D53F900476DC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BA3FCB911C7D747100476DC9 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		BA3FCB931C7D74ED00476DC9 /* WCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLikeButton.h; sourceTree = "<group>"; };
+		BA3FCB951C7D76AA00476DC9 /* ContactsDataLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsDataLogic.h; sourceTree = "<group>"; };
+		BA3FCB971C7D76CD00476DC9 /* CBaseContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBaseContact.h; sourceTree = "<group>"; };
+		BA3FCB991C7D76E900476DC9 /* WCUserComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCUserComment.h; sourceTree = "<group>"; };
+		BA3FCB9B1C7D789D00476DC9 /* WCDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDataItem.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA3FCB6C1C7D51B600476DC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3FCB901C7D53F900476DC9 /* CoreLocation.framework in Frameworks */,
+				BA3FCB741C7D51B600476DC9 /* Foundation.framework in Frameworks */,
+				BA3FCB761C7D51B600476DC9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA3FCB661C7D51B600476DC9 = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB771C7D51B600476DC9 /* wechat_floatingwindow */,
+				BA3FCB721C7D51B600476DC9 /* Frameworks */,
+				BA3FCB711C7D51B600476DC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA3FCB711C7D51B600476DC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB701C7D51B600476DC9 /* libwechat_floatingwindow.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA3FCB721C7D51B600476DC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB8F1C7D53F900476DC9 /* CoreLocation.framework */,
+				BA3FCB731C7D51B600476DC9 /* Foundation.framework */,
+				BA3FCB751C7D51B600476DC9 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA3FCB771C7D51B600476DC9 /* wechat_floatingwindow */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB931C7D74ED00476DC9 /* WCLikeButton.h */,
+				BA3FCB9B1C7D789D00476DC9 /* WCDataItem.h */,
+				BA3FCB8B1C7D51EA00476DC9 /* HookUtil.h */,
+				BA3FCB8C1C7D51EA00476DC9 /* HookUtil.m */,
+				BA3FCB971C7D76CD00476DC9 /* CBaseContact.h */,
+				BA3FCB991C7D76E900476DC9 /* WCUserComment.h */,
+				BA3FCB7F1C7D51B600476DC9 /* wechat_floatingwindow.h */,
+				BA3FCB951C7D76AA00476DC9 /* ContactsDataLogic.h */,
+				BA3FCB811C7D51B600476DC9 /* wechat_floatingwindow.m */,
+				BA3FCB911C7D747100476DC9 /* ContactsViewController.h */,
+				BA3FCB781C7D51B600476DC9 /* Package */,
+				BA3FCB7C1C7D51B600476DC9 /* Supporting Files */,
+			);
+			path = wechat_floatingwindow;
+			sourceTree = "<group>";
+		};
+		BA3FCB781C7D51B600476DC9 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB791C7D51B600476DC9 /* DEBIAN */,
+				BA3FCB831C7D51B600476DC9 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		BA3FCB791C7D51B600476DC9 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB7A1C7D51B600476DC9 /* control.txt */,
+				BA3FCB7B1C7D51B600476DC9 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		BA3FCB7C1C7D51B600476DC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB7D1C7D51B600476DC9 /* PackageVersion.plist */,
+				BA3FCB7E1C7D51B600476DC9 /* wechat_floatingwindow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA3FCB831C7D51B600476DC9 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB841C7D51B600476DC9 /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		BA3FCB841C7D51B600476DC9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB851C7D51B600476DC9 /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BA3FCB6D1C7D51B600476DC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3FCB981C7D76CD00476DC9 /* CBaseContact.h in Headers */,
+				BA3FCB921C7D747100476DC9 /* ContactsViewController.h in Headers */,
+				BA3FCB961C7D76AA00476DC9 /* ContactsDataLogic.h in Headers */,
+				BA3FCB9A1C7D76E900476DC9 /* WCUserComment.h in Headers */,
+				BA3FCB801C7D51B600476DC9 /* wechat_floatingwindow.h in Headers */,
+				BA3FCB9C1C7D789D00476DC9 /* WCDataItem.h in Headers */,
+				BA3FCB8D1C7D51EA00476DC9 /* HookUtil.h in Headers */,
+				BA3FCB941C7D74ED00476DC9 /* WCLikeButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BA3FCB6F1C7D51B600476DC9 /* wechat_floatingwindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA3FCB881C7D51B600476DC9 /* Build configuration list for PBXNativeTarget "wechat_floatingwindow" */;
+			buildPhases = (
+				BA3FCB6B1C7D51B600476DC9 /* Sources */,
+				BA3FCB6C1C7D51B600476DC9 /* Frameworks */,
+				BA3FCB6D1C7D51B600476DC9 /* Headers */,
+				BA3FCB6E1C7D51B600476DC9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wechat_floatingwindow;
+			productName = wechat_floatingwindow;
+			productReference = BA3FCB701C7D51B600476DC9 /* libwechat_floatingwindow.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA3FCB671C7D51B600476DC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					BA3FCB6F1C7D51B600476DC9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = BA3FCB6A1C7D51B600476DC9 /* Build configuration list for PBXProject "wechat_floatingwindow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BA3FCB661C7D51B600476DC9;
+			productRefGroup = BA3FCB711C7D51B600476DC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA3FCB6F1C7D51B600476DC9 /* wechat_floatingwindow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA3FCB6E1C7D51B600476DC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA3FCB6B1C7D51B600476DC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3FCB8E1C7D51EA00476DC9 /* HookUtil.m in Sources */,
+				BA3FCB821C7D51B600476DC9 /* wechat_floatingwindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BA3FCB861C7D51B600476DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		BA3FCB871C7D51B600476DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		BA3FCB891C7D51B600476DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wechat_floatingwindow/wechat_floatingwindow-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		BA3FCB8A1C7D51B600476DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wechat_floatingwindow/wechat_floatingwindow-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA3FCB6A1C7D51B600476DC9 /* Build configuration list for PBXProject "wechat_floatingwindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3FCB861C7D51B600476DC9 /* Debug */,
+				BA3FCB871C7D51B600476DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA3FCB881C7D51B600476DC9 /* Build configuration list for PBXNativeTarget "wechat_floatingwindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3FCB891C7D51B600476DC9 /* Debug */,
+				BA3FCB8A1C7D51B600476DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA3FCB671C7D51B600476DC9 /* Project object */;
+}
